@@ -1,0 +1,17 @@
+name: alexey2baranov-snap-demo
+version: v1.4.0+git1.7fa14d9-dirty
+summary: Command line weather tool.
+description: |
+  Get current weather:-
+    $ wethr
+  Get current weather in metric units
+    $ wethr --metric
+  Get current weather in imperial units
+    $ wethr --imperial
+architectures:
+- amd64
+confinement: devmode
+grade: devel
+apps:
+  wethr:
+    command: command-wethr.wrapper
